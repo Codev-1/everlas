@@ -1,0 +1,535 @@
+<!-- brown  #8b1a1a       -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everlast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+ <header class="navbar">
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="logo">
+    <a href="index.html"><img src="image/logo2.png" alt="Logo" style="height: 50px;" /></a>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="About.html">About Us </a>
+        <!-- <ul class="dropdown-menu">
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="brochure.pdf" download>Download Brochure</a></li>
+        </ul> -->
+      </li>
+
+      <li class="dropdown">
+        <a href="product.html">Products ▾</a>
+        <ul class="dropdown-menu">
+
+          <li class="sub-dropdown">
+            <a href="Paver_block.html">PAVER BLOCKS ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="Paver_block.html">Rough Finish</a></li>
+              <li><a href="Paver_block.html">Matte Finish</a></li>
+              <li><a href="Paver_block.html">Rubber Mould Finish</a></li>
+              <li><a href="Paver_block.html">Chequered Tile</a></li>
+              <li><a href="Paver_block.html">High Strength Paver</a></li>
+              <li><a href="Paver_block.htmlr">Eco Paver</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
+          <li><a href="Concrete_Kerbstone.html">CONCRETE KERBSTORE</a></li>
+
+          <li class="sub-dropdown">
+            <a href="chamber_cover.html">CHAMBER COVER ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="chamber_cover.html">Low Duty</a></li>
+              <li><a href="chamber_cover.html">Medium Duty</a></li>
+              <li><a href="chamber_cover.html">Heavy Duty</a></li>
+              <li><a href="chamber_cover.html">Extra Heavy Duty</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-dropdown">
+            <a href="U_Dtrain.html">U-DRAIN ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
+              <li><a href="#U_Dtrain.html">450×450×2000mm</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
+          <li><a href="Saucer_Drain.html">SOURCE DRAIN</a></li>
+          <li><a href="Rcc_Tree_Gaurd.html">TREE GRATING</a></li>
+          <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li>
+          <li><a href="Concrete_Manhole_Cover.html">DRAIN COVER</a></li>
+        </ul>
+      </li>
+
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Banner Section with Inline CSS and JS -->
+<section style="
+  position: relative;
+  background: url('image/C_A_01.jpg') center center / cover no-repeat;
+  color: white;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  ">
+  <!-- Overlay -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  "></div>
+
+  <!-- Banner Content -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+  ">
+    <h1 style="
+      font-size: 2.5rem;
+      margin: 0;
+      opacity: 0;
+      animation: fadeSlide 1s forwards;
+    ">
+      Connect with Everlast
+    <p id="animated-banner-text" style="
+      font-size: 1.2rem;
+      margin-top: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      width: 0;
+    "></p>
+  </div>
+
+  <!-- Inline Keyframes -->
+  <style>
+    @keyframes fadeSlide {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+
+  <!-- Inline JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const textElement = document.getElementById('animated-banner-text');
+      const textToType = "Contact Everlast for Quality Construction Materials and Support.";
+      let index = 0;
+
+      function typeText() {
+        if (index < textToType.length) {
+          textElement.textContent += textToType.charAt(index);
+          index++;
+          textElement.style.width = (index * 10) + 'px';
+          setTimeout(typeText, 50);
+        } else {
+          textElement.style.animation = 'blink 0.75s step-end infinite';
+        }
+      }
+
+      setTimeout(typeText, 500);
+    });
+  </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 🎨 Custom Animation Styles -->
+<style>
+  .animate-section {
+    opacity: 0;
+    transform: scale(0.8) rotateX(30deg);
+    transition: all 1.2s ease-out;
+    transform-origin: center;
+  }
+
+  .flip-in {
+    transform: rotateY(90deg);
+  }
+
+  .fade-slide-up {
+    transform: translateY(60px);
+  }
+
+  .bounce-in {
+    transform: scale(0.5);
+  }
+
+  .animated {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  button:hover {
+    background: #a32222;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #8b1a1a;
+    box-shadow: 0 0 6px rgba(139, 26, 26, 0.5);
+  }
+</style>
+
+<!-- 🚀 JavaScript Animation Trigger -->
+<script>
+  window.addEventListener('scroll', () => {
+    document.querySelectorAll('.animate-section').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight - 100) {
+        el.classList.add('animated');
+      }
+    });
+  });
+</script>
+
+<!-- Section 1: Company Overview -->  
+
+
+<!-- Section 2: Why Choose Us -->
+
+
+<!-- Section 3: Reach Out -->
+<section class="animate-section" style="padding: 60px 20px; background: #ffffff; font-family: Arial, sans-serif;">
+  <div style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2 style="color: #8b1a1a; font-size: 2.5rem; margin-bottom: 40px; animation: fadeInUp 1s ease-out;">📬 Reach Out To Us</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+      <!-- Address -->
+      <div class="contact-card" style="flex: 1; min-width: 280px; padding: 20px; border-radius: 12px; background: #fef7f7; box-shadow: 0 4px 12px rgba(0,0,0,0.1); animation: fadeInUp 1s ease-out 0.2s both;">
+        <h4 style="color: #8b1a1a; font-size: 1.2rem; margin-bottom: 10px;">📍 Address</h4>
+        <p style="color: #333;">Everlast Industries,<br> Plot No. 24, Industrial Estate,<br> Pune, Maharashtra, 411045</p>
+      </div>
+      <!-- Phone -->
+      <div class="contact-card" style="flex: 1; min-width: 280px; padding: 20px; border-radius: 12px; background: #fef7f7; box-shadow: 0 4px 12px rgba(0,0,0,0.1); animation: fadeInUp 1s ease-out 0.4s both;">
+        <h4 style="color: #8b1a1a; font-size: 1.2rem; margin-bottom: 10px;">📞 Phone</h4>
+        <p><a href="tel:+919876543210" style="color: #333; text-decoration: none;">+91 08047641270</a></p>
+      </div>
+      <!-- Email -->
+      <div class="contact-card" style="flex: 1; min-width: 280px; padding: 20px; border-radius: 12px; background: #fef7f7; box-shadow: 0 4px 12px rgba(0,0,0,0.1); animation: fadeInUp 1s ease-out 0.6s both;">
+        <h4 style="color: #8b1a1a; font-size: 1.2rem; margin-bottom: 10px;">📧 Email</h4>
+        <p><a href="mailto:info@everlast.com" style="color: #333; text-decoration: none;">info@everlast.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inline CSS for Animations & Hover Effects -->
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-card:hover {
+      background-color: #fff0f0;
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-card a:hover {
+      color: #8b1a1a;
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- Inline JavaScript for Fade-on-Scroll (optional) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".contact-card");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      elements.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        observer.observe(el);
+      });
+    });
+  </script>
+</section>
+<!-- 
+????????????? start ????????? -->
+
+<!-- ????????????? start ?????????
+
+????????????? start ????????? -->
+
+
+
+
+
+<!-- Section 4: Contact Form (Enhanced) -->
+<section class="animate-section bounce-in" style="
+  padding: 60px 20px; 
+  background: #f7f7f7; 
+  font-family: Arial, sans-serif;
+">
+  <div style="
+    max-width: 700px; 
+    margin: auto; 
+    background: white; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  ">
+    <h2 style="
+      color: #8b1a1a; 
+      font-size: 2rem; 
+      margin-bottom: 20px; 
+      text-align: center;
+    ">
+      Send Us a Message
+    </h2>
+    <form style="
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px;
+    ">
+      <input type="text" placeholder="Your Name" style="
+        padding: 14px; 
+        border: 1px solid #ccc; 
+        border-radius: 10px; 
+        font-size: 1rem; 
+        transition: border-color 0.3s, box-shadow 0.3s;
+      " 
+      onfocus="this.style.borderColor='#8b1a1a'; this.style.boxShadow='0 0 5px rgba(139,26,26,0.3)';" 
+      onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none';" 
+      required>
+      
+      <input type="email" placeholder="Your Email" style="
+        padding: 14px; 
+        border: 1px solid #ccc; 
+        border-radius: 10px; 
+        font-size: 1rem; 
+        transition: border-color 0.3s, box-shadow 0.3s;
+      " 
+      onfocus="this.style.borderColor='#8b1a1a'; this.style.boxShadow='0 0 5px rgba(139,26,26,0.3)';" 
+      onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none';" 
+      required>
+      
+      <textarea placeholder="Your Message" style="
+        grid-column: span 2; 
+        padding: 14px; 
+        height: 150px; 
+        border: 1px solid #ccc; 
+        border-radius: 10px; 
+        font-size: 1rem; 
+        resize: vertical; 
+        transition: border-color 0.3s, box-shadow 0.3s;
+      " 
+      onfocus="this.style.borderColor='#8b1a1a'; this.style.boxShadow='0 0 5px rgba(139,26,26,0.3)';" 
+      onblur="this.style.borderColor='#ccc'; this.style.boxShadow='none';" 
+      required></textarea>
+      
+      <button type="submit" style="
+        grid-column: span 2; 
+        background: #8b1a1a; 
+        color: white; 
+        padding: 14px; 
+        border: none; 
+        border-radius: 50px; 
+        font-size: 1rem; 
+        cursor: pointer; 
+        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      " 
+      onmouseover="this.style.background='#a12222'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(139,26,26,0.3)';" 
+      onmouseout="this.style.background='#8b1a1a'; this.style.transform='scale(1)'; this.style.boxShadow='none';">
+        Submit Message
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+-- 
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>> End>>>>>>>>>>>>>>>> -->
+<!-- 
+>>>>>>>>>>>>>>>>>>>>>>>>> End>>>>>>>>>>>>>>>> -->
+
+<section class="google-map" style="width: 100%;">
+  <div class="mapouter" style="position: relative; text-align: right; height: 500px; width: 100%;">
+    <div class="gmap_canvas" style="overflow: hidden; background: none !important; height: 500px; width: 100%;">
+      <iframe
+        width="100%"
+        height="500"
+        id="gmap_canvas"
+        src="https://maps.google.com/maps?q=18.52697,73.96126&hl=en&t=&z=12&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        style="border:0;">
+      </iframe>
+      <br>
+      <a href="https://www.google.co.in/maps/dir//18.52697,73.96126/@18.5269521,73.8788583,12z?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D"
+         style="color:#007BFF; text-decoration:none;">
+        Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Bundruk, Manjari Budruk, Pune-411037, Maharashtra, India
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- ______________________________   Footer Section______   START_____________ -->
+  <!-- FOOTER SECTION -->
+<footer style="background-color:#333; color:white; padding:60px 20px 30px; font-family:Arial, sans-serif;">
+
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:40px;">
+
+    <!-- Brand / Logo -->
+    <div style="flex:1; min-width:220px;">
+      <h2 style="font-size:1.8rem; font-weight:bold; margin-bottom:15px; color:#f5c39b;">Everlast</h2>
+      <p style="line-height:1.6;">Leading manufacturer of paving & construction materials delivering lasting strength and trusted service across India.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex:1; min-width:160px;">
+      <h4 style="margin-bottom:15px; color:#f5c39b;">Quick Links</h4>
+      <ul style="list-style:none; padding:0; line-height:2;">
+        <li><a href="index.html" style="color:#fff; text-decoration:none;">Home</a></li>
+        <li><a href="About.html" style="color:#fff; text-decoration:none;">About Us</a></li>
+        <li><a href="product.html" style="color:#fff; text-decoration:none;">Gallery</a></li>
+        <li><a href="Contact.html" style="color:#fff; text-decoration:none;">Contact US</a></li>
+    
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+<div style="flex:1; min-width:220px;">
+  <h4 style="margin-bottom:15px; color:#f5c39b;">Contact Us</h4>
+  <p style="line-height:1.6;">
+    <strong>Address:</strong><br>
+    Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Bundruk, Manjari Budruk, Pune-411037, Maharashtra, India
+  </p>
+  <p style="line-height:1.6;">
+    <strong>Owner:</strong> Mr. Deshmukh
+  </p>
+  <p style="line-height:1.6;">
+    <strong>Phone:</strong> 
+    <a href="tel:08047641270" style="color:#f5c39b; text-decoration:none;">08047641270</a>
+    <br>
+    
+  </p>
+</div>
+
+
+    <!-- Social Media & Language -->
+    <div style="flex:1; min-width:200px;">
+      <h4 style="margin-bottom:15px; color:#f5c39b;">Follow Us</h4>
+      <div style="display:flex; gap:15px; font-size:1.3rem;">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.indiamart.com/erverlast/" style="color:white;"><i class="fab fa-facebook-f"></i></a>
+        <!-- <a href="#" style="color:white;"><i class="fab fa-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fwww.indiamart.com%2Ferverlast%2F" style="color:white;"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="#" style="color:white;"><i class="fab fa-whatsapp"></i></a> -->
+      </div>
+
+      <!-- Language Selector -->
+      <div style="margin-top:20px;">
+       
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr style="margin:40px 0; border:0; border-top:1px solid rgba(255,255,255,0.2);" />
+
+  <!-- Copyright -->
+  <div style="text-align:center; font-size:0.85rem; color:#ccc;">
+   © 2025 Everlast. All rights reserved. | Designed  by DW INNOVATION PVT. LTD.
+
+  </div>
+</footer>
+
+<!-- Font Awesome (if not loaded elsewhere) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

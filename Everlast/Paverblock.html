@@ -1,0 +1,475 @@
+<!-- brown  #8b1a1a       -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everlast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+ <header class="navbar">
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="logo">
+    <a href="index.html"><img src="image/logo2.png" alt="Logo" style="height: 50px;" /></a>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="About.html">About Us </a>
+        <!-- <ul class="dropdown-menu">
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="brochure.pdf" download>Download Brochure</a></li>
+        </ul> -->
+      </li>
+
+      <li class="dropdown">
+        <a href="product.html">Products ▾</a>
+        <ul class="dropdown-menu">
+
+          <li class="sub-dropdown">
+            <a href="#paver">PAVER BLOCKS ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="#rough-finish">Rough Finish</a></li>
+              <li><a href="#matte-finish">Matte Finish</a></li>
+              <li><a href="#rubber-mould">Rubber Mould Finish</a></li>
+              <li><a href="#chequered">Chequered Tile</a></li>
+              <li><a href="#high-strength">High Strength Paver</a></li>
+              <li><a href="#eco-paver">Eco Paver</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#grass-blocks">GRASS BLOCKS</a></li>
+          <li><a href="#kerbstore">CONCRETE KERBSTORE</a></li>
+
+          <li class="sub-dropdown">
+            <a href="#chamber-cover">CHAMBER COVER ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="#low-duty">Low Duty</a></li>
+              <li><a href="#medium-duty">Medium Duty</a></li>
+              <li><a href="#heavy-duty">Heavy Duty</a></li>
+              <li><a href="#extra-heavy-duty">Extra Heavy Duty</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-dropdown">
+            <a href="#udrain">U-DRAIN ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="#udrain-300">300×300×2000mm</a></li>
+              <li><a href="#udrain-450">450×450×2000mm</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#bollard">RCC PRECAST BOLLARD</a></li>
+          <li><a href="#source-drain">SOURCE DRAIN</a></li>
+          <li><a href="#tree-grating">TREE GRATING</a></li>
+          <li><a href="#trench-cover">CABLE TRENCH COVER</a></li>
+          <li><a href="#drain-cover">DRAIN COVER</a></li>
+        </ul>
+      </li>
+
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paver BLOck</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom right, #f0f4f7, #dbefff);
+    }
+
+    h2 {
+      color: #2c3e50;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    p {
+      text-align: center;
+      max-width: 800px;
+      margin: 10px auto 30px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .container {
+      max-width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
+
+    .card {
+      display: inline-block;
+      width: 180px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 10px;
+      background: #ffffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 8px;
+      color: #34495e;
+    }
+
+    .price {
+      color: #2c3e50;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* Product Details Section */
+    .product-box {
+      display: flex;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      gap: 25px;
+    }
+
+    .product-img {
+      width: 45%;
+    }
+
+    .product-img img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-details {
+      width: 55%;
+    }
+
+    .product-details h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #00795c;
+    }
+
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .price span {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .price a {
+      color: #00795c;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .min-order {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      background-color: #f1f1f1;
+      width: 35%;
+    }
+
+    .desc {
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00795c;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00614b;
+    }
+
+    .btn-outline {
+      background-color: white;
+      color: #00795c;
+      border: 2px solid #00795c;
+      margin-top: 15px;
+    }
+
+    .btn-outline:hover {
+      background-color: #00795c;
+      color: white;
+    }
+
+    .btn-outline img {
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    .quote-section {
+      margin-top: 20px;
+    }
+
+    .quote-section a {
+      display: inline-block;
+      text-decoration: none;
+      color: #00795c;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .quote-section a:hover {
+      color: #004d3f;
+    }
+
+    .quote-section img {
+      height: 18px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    /* Smooth Scroll Slider */
+    #slider {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Paver Block Collection</h2>
+  <p>
+    Pioneers in the industry, we offer a wide range of paver blocks including Short Blast, I Shape Gray, Interlocking Red-Yellow, and many more designed for outdoor spaces.
+  </p>
+
+  <div class="container" id="slider">
+    <div class="card">
+      <img src="images/01SS.webp" alt="Short Blast Paver Block">
+      <div class="title">Short Blast Paver Block</div>
+      <div class="price">₹ 43/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/I Shape Gray Paver Block.webp" alt="I Shape">
+      <div class="title">I Shape Gray Paver</div>
+      <div class="price">₹ 37/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/Red And Yellow Interlocking.webp" alt="Red and Yellow">
+      <div class="title">Red And Yellow Inter...</div>
+      <div class="price">₹ 38/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/Red And White Interlocking.webp" alt="Red and White">
+      <div class="title">Red And White Inter...</div>
+      <div class="price">₹ 36/Piece</div>
+    </div>
+    <div class="card">
+      <img src="images/Car Parking Paver Block.webp" alt="Car Parking">
+      <div class="title">Car Parking Paver Block</div>
+      <div class="price">₹ 38/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/Rectangular Red Paver Blocks.jpg" alt="Rectangular Red">
+      <div class="title">Rectangular Red Paver</div>
+      <div class="price">₹ 38/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/Dull Yellow Interlocking.webp" alt="Dull Yellow">
+      <div class="title">Dull Yellow Interlock</div>
+      <div class="price">₹ 36/Piece</div>
+    </div>
+    <div class="card">
+      <img src="images/Yellow Interlocking 01.webp" alt="Yellow Interlocking">
+      <div class="title">Yellow Interlocking</div>
+      <div class="price">₹ 36/sq ft</div>
+    </div>
+    <div class="card">
+      <img src="images/zig-zag-interlocking-paver-block-500x500.webp" alt="Zig Zag">
+      <div class="title">Zig Zag Interlock</div>
+      <div class="price">₹ 47/Piece</div>
+    </div>
+    <div class="card">
+      <img src="images/hexagonal-paver-block-500x500.webp" alt="Hexagonal">
+      <div class="title">Hexagonal Paver</div>
+      <div class="price">₹ 36/Piece</div>
+    </div>
+    <div class="card">
+      <img src="images/kerb-stone-paver-block-500x500.webp" alt="Kerb Stone">
+      <div class="title">Kerb Stone Paver</div>
+      <div class="price">₹ 300/Piece</div>
+    </div>
+    <div class="card">
+      <img src="images/Cement Pavar __011.webp" alt="Cement">
+      <div class="title">Cement Paver Block</div>
+      <div class="price">₹ 37/sq ft</div>
+    </div>
+  </div>
+
+  <!-- Product Detail Section for Short Blast -->
+  <div class="product-box">
+    <div class="product-img">
+      <img src="images/01SS.webp" alt="Short Blast Paver Block">
+      <br>
+      <a href="#" class="btn btn-outline">
+        <img src="images/01SS.webp" alt=""> Get More Photos
+      </a>
+    </div>
+    <div class="product-details">
+      <h2>Short Blast Paver Block</h2>
+      <div class="price">
+        ₹ <span>43</span>/sq ft 
+        <a href="#">Get Latest Price</a>
+      </div>
+      <div class="min-order">Minimum Order Quantity: <strong>1000 sq ft</strong></div>
+      <table>
+        <tr><td>Thickness</td><td>60 mm</td></tr>
+        <tr><td>Material</td><td>Concrete</td></tr>
+        <tr><td>Color</td><td>Grey</td></tr>
+        <tr><td>Shape</td><td>Square</td></tr>
+        <tr><td>Brand</td><td>Everlast</td></tr>
+        <tr><td>Dimensions</td><td>200*200*60 MM</td></tr>
+        <tr><td>Type</td><td>Outdoor</td></tr>
+      </table>
+      <div class="desc">Short Blast Paver Block</div>
+      <button class="btn">Yes, I am interested!</button>
+      <div class="quote-section">
+        <p>Interested in this product?</p>
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt=""> Get Best Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let scrollInterval = setInterval(() => {
+      slider.scrollLeft += 1;
+      if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+        slider.scrollLeft = 0;
+      }
+    }, 30);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+ <div class="product-box">
+    <div class="product-img">
+      <img src="images/Red And Yellow Interlocking.webp" alt="Short Blast Paver Block">
+      <br>
+      <a href="#" class="btn btn-outline">
+        <img src="images/01SS.webp" alt=""> Get More Photos
+      </a>
+    </div>
+    <div class="product-details">
+      <h2>Short Blast Paver Block</h2>
+      <div class="price">
+        ₹ <span>43</span>/sq ft 
+        <a href="#">Get Latest Price</a>
+      </div>
+      <div class="min-order">Minimum Order Quantity: <strong>1000 sq ft</strong></div>
+      <table>
+        <tr><td>Thickness</td><td>60 mm</td></tr>
+        <tr><td>Material</td><td>Concrete</td></tr>
+        <tr><td>Color</td><td>Grey</td></tr>
+        <tr><td>Shape</td><td>Square</td></tr>
+        <tr><td>Brand</td><td>Everlast</td></tr>
+        <tr><td>Dimensions</td><td>200*200*60 MM</td></tr>
+        <tr><td>Type</td><td>Outdoor</td></tr>
+      </table>
+      <div class="desc">Short Blast Paver Block</div>
+      <button class="btn">Yes, I am interested!</button>
+      <div class="quote-section">
+        <p>Interested in this product?</p>
+        <a href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt=""> Get Best Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let scrollInterval = setInterval(() => {
+      slider.scrollLeft += 1;
+      if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
+        slider.scrollLeft = 0;
+      }
+    }, 30);
+  </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

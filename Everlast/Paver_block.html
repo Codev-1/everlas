@@ -1,0 +1,552 @@
+<!-- brown  #8b1a1a       -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everlast</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+ <header class="navbar">
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="logo">
+    <a href="index.html"><img src="image/logo2.png" alt="Logo" style="height: 50px;" /></a>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+
+      <li class="dropdown">
+        <a href="About.html">About Us </a>
+        <!-- <ul class="dropdown-menu">
+          <li><a href="testimonial.html">Testimonials</a></li>
+          <li><a href="brochure.pdf" download>Download Brochure</a></li>
+        </ul> -->
+      </li>
+
+      <li class="dropdown">
+        <a href="product.html">Products ▾</a>
+        <ul class="dropdown-menu">
+
+          <li class="sub-dropdown">
+            <a href="Paver_block.html">PAVER BLOCKS ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="Paver_block.html">Rough Finish</a></li>
+              <li><a href="Paver_block.html">Matte Finish</a></li>
+              <li><a href="Paver_block.html">Rubber Mould Finish</a></li>
+              <li><a href="Paver_block.html">Chequered Tile</a></li>
+              <li><a href="Paver_block.html">High Strength Paver</a></li>
+              <li><a href="Paver_block.htmlr">Eco Paver</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
+          <li><a href="Concrete_Kerbstone.html">CONCRETE KERBSTORE</a></li>
+
+          <li class="sub-dropdown">
+            <a href="chamber_cover.html">CHAMBER COVER ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="chamber_cover.html">Low Duty</a></li>
+              <li><a href="chamber_cover.html">Medium Duty</a></li>
+              <li><a href="chamber_cover.html">Heavy Duty</a></li>
+              <li><a href="chamber_cover.html">Extra Heavy Duty</a></li>
+            </ul>
+          </li>
+
+          <li class="sub-dropdown">
+            <a href="U_Dtrain.html">U-DRAIN ▸</a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
+              <li><a href="#U_Dtrain.html">450×450×2000mm</a></li>
+            </ul>
+          </li>
+
+          <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
+          <li><a href="Saucer_Drain.html">SOURCE DRAIN</a></li>
+          <li><a href="Rcc_Tree_Gaurd.html">TREE GRATING</a></li>
+          <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li>
+          <li><a href="Concrete_Manhole_Cover.html">DRAIN COVER</a></li>
+        </ul>
+      </li>
+
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(to bottom right, #f0f4f7, #dbefff); padding: 30px;">
+  <h2 style="color: #8b1a18; text-align: center; font-size: 30px;">Paver Block Collection</h2>
+  <p style="text-align: center; max-width: 800px; margin: 10px auto 30px; font-size: 16px; color: #555;">
+    Pioneers in the industry, we offer a wide range of paver blocks including Short Blast, I Shape Gray, Interlocking Red-Yellow, and many more designed for outdoor spaces.
+  </p>
+  </section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paver Blocks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef6fb;
+      /* padding: 20px; */
+      margin: 0;
+    }
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards in a row */
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Responsive handling */
+@media (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+ .product-card {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease, box-shadow 0.3s ease;
+  max-height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+    .product-card.active {
+      max-height: 600px; /* expanded height */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .info {
+      padding: 15px;
+      flex-shrink: 0;
+    }
+
+    .info h3 {
+      color: #800000;
+      margin: 0 0 10px;
+    }
+
+    .info p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .toggle-btn {
+      margin-top: 10px;
+      background-color: #800000;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #a00000;
+    }
+
+    .product-details {
+      padding: 0 15px 15px;
+      margin-top: 10px;
+      font-size: 13px;
+      overflow-y: auto;
+    }
+  </style>
+  
+</head>
+<body>
+
+    
+
+    
+<div class="product-container">
+    
+
+  <!-- Card 1 -->
+  <div class="product-card">
+    <img src="image/01SS.webp" alt="Short Blast Paver Block" />
+    <div class="info">
+      <h3>Short Blast Paver Block</h3>
+      <p><strong>₹43</strong>/sq ft</p>
+      <p>Min. Order: 1000 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Grey</p>
+      <p><strong>Shape:</strong> Square</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> 200×200×60 mm</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="product-card">
+    <img src="image/I Shape Gray Paver Block.webp" alt="I Shape Gray Paver Block" />
+    <div class="info">
+      <h3>I Shape Gray Paver Block</h3>
+      <p><strong>₹37</strong>/sq ft</p>
+      <p>Min. Order: 800 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Gray</p>
+      <p><strong>Shape:</strong> I-Shape</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="product-card">
+    <img  src="image/red_yellow.jpg" alt="Red-Yellow Interlock" alt="Red-Yellow Interlock Paver Block" />
+    <div class="info">
+      <h3>Red-Yellow Interlock</h3>
+      <p><strong>₹45</strong>/sq ft</p>
+      <p>Min. Order: 900 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Red/Yellow</p>
+      <p><strong>Shape:</strong> Interlocking</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="product-card">
+    <img src=image/hexagonal-paver-block-500x500.webp alt="Hexagonal paver block" />
+    <div class="info">
+      <h3>Hexagonal paver block</h3>
+      <p><strong>₹45</strong>/sq ft</p>
+      <p>Min. Order: 900 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60000 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Red/Yellow</p>
+      <p><strong>Shape:</strong> Interlocking</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+
+    <!-- Card 5 -->
+  <div class="product-card">
+    <img  src="image/zig-zag-interlocking-paver-block-500x500.webp" alt="Zigzag Paver Block" />
+    <div class="info">
+      <h3>Zigzag Paver Block</h3>
+      <p><strong>₹40</strong>/sq ft</p>
+      <p>Min. Order: 1000 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Grey</p>
+      <p><strong>Shape:</strong> Zigzag</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="product-card">
+    <img src="image/paver-block-tree.webp"  alt="Square Paver Block" />
+    <div class="info">
+      <h3>Square Paver Block</h3>
+      <p><strong>₹42</strong>/sq ft</p>
+      <p>Min. Order: 700 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Cement</p>
+      <p><strong>Color:</strong> Red</p>
+      <p><strong>Shape:</strong> Square</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="product-card">
+    <img src="image/Red And White Interlocking.webp" alt="Trihex Paver Block" />
+    <div class="info">
+      <h3>Trihex Paver Block</h3>
+      <p><strong>₹38</strong>/sq ft</p>
+      <p>Min. Order: 950 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Yellow</p>
+      <p><strong>Shape:</strong> Trihex</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="product-card">
+    <img src="image/Pavere_Blocks.jpg"alt="PVC Paver Block" />
+    <div class="info">
+      <h3>Multi color Paver Block</h3>
+      <p><strong>₹50</strong>/sq ft</p>
+      <p>Min. Order: 1000 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 80 mm</p>
+      <p><strong>Material:</strong> PVC</p>
+      <p><strong>Color:</strong> Multicolor</p>
+      <p><strong>Shape:</strong> Interlocking</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Heavy-duty</p>
+    </div>
+  </div>
+
+  <!-- Card 9 -->
+  <div class="product-card">
+    <img src="image/Rectangular Red Paver Blocks.jpg" alt="New Paver Block 1" />
+    <div class="info">
+      <h3>Rectangular Red Paver Blocks</h3>
+      <p><strong>₹48</strong>/sq ft</p>
+      <p>Min. Order: 850 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 65 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Brown</p>
+      <p><strong>Shape:</strong> Hexagon</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 10 -->
+  <div class="product-card">
+    <img src="image/Yellow Interlocking 01.webp" alt="New Paver Block 2" />
+    <div class="info">
+      <h3>Yellow Interlocking </h3>
+      <p><strong>₹44</strong>/sq ft</p>
+      <p>Min. Order: 900 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 55 mm</p>
+      <p><strong>Material:</strong> Cement</p>
+      <p><strong>Color:</strong> Light Grey</p>
+      <p><strong>Shape:</strong> Rectangle</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 11 -->
+  <div class="product-card">
+    <img src="image/kerb-stone-paver-block-500x500.webp" alt="kerbstone paverblock " />
+    <div class="info">
+      <h3>Kerbstone Paverblock </h3>
+      <p><strong>₹46</strong>/sq ft</p>
+      <p>Min. Order: 950 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 60 mm</p>
+      <p><strong>Material:</strong> Concrete</p>
+      <p><strong>Color:</strong> Dark Grey</p>
+      <p><strong>Shape:</strong> Octagon</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Outdoor</p>
+    </div>
+  </div>
+
+  <!-- Card 12 -->
+  <div class="product-card">
+    <img  src="image/Cement Paver Block.jpg"  alt="New Paver Block 4" />
+    <div class="info">
+      <h3>Cement Paver Block</h3>
+      <p><strong>₹52</strong>/sq ft</p>
+      <p>Min. Order: 1000 sq ft</p>
+      <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+      <p><strong>Thickness:</strong> 70 mm</p>
+      <p><strong>Material:</strong> PVC</p>
+      <p><strong>Color:</strong> Multi</p>
+      <p><strong>Shape:</strong> Interlocking</p>
+      <p><strong>Brand:</strong> Everlast</p>
+      <p><strong>Dimensions:</strong> Standard</p>
+      <p><strong>Type:</strong> Heavy-duty</p>
+    </div>
+  </div>
+
+  
+
+</div>
+
+
+
+
+<script>
+  document.querySelectorAll('.toggle-btn').forEach(button => {
+    button.addEventListener('click', function () {
+      const card = this.closest('.product-card');
+      const isActive = card.classList.contains('active');
+
+      // Collapse all cards
+      document.querySelectorAll('.product-card.active').forEach(c => {
+        c.classList.remove('active');
+        c.querySelector('.toggle-btn').textContent = 'View Details';
+      });
+
+      // Expand clicked card if it was not active
+      if (!isActive) {
+        card.classList.add('active');
+        this.textContent = 'Hide Details';
+      }
+    });
+  });
+</script>
+
+
+
+<!-- ______________________________   Footer Section______   START_____________ -->
+  <!-- FOOTER SECTION -->
+<footer style="background-color:#333; color:white; padding:60px 20px 30px; font-family:Arial, sans-serif;">
+
+  <div style="max-width:1200px; margin:auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:40px;">
+
+    <!-- Brand / Logo -->
+    <div style="flex:1; min-width:220px;">
+      <h2 style="font-size:1.8rem; font-weight:bold; margin-bottom:15px; color:#f5c39b;">Everlast</h2>
+      <p style="line-height:1.6;">Leading manufacturer of paving & construction materials delivering lasting strength and trusted service across India.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex:1; min-width:160px;">
+      <h4 style="margin-bottom:15px; color:#f5c39b;">Quick Links</h4>
+      <ul style="list-style:none; padding:0; line-height:2;">
+        <li><a href="index.html" style="color:#fff; text-decoration:none;">Home</a></li>
+        <li><a href="About.html" style="color:#fff; text-decoration:none;">About Us</a></li>
+        <li><a href="product.html" style="color:#fff; text-decoration:none;">Gallery</a></li>
+        <li><a href="Contact.html" style="color:#fff; text-decoration:none;">Contact US</a></li>
+    
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+<div style="flex:1; min-width:220px;">
+  <h4 style="margin-bottom:15px; color:#f5c39b;">Contact Us</h4>
+  <p style="line-height:1.6;">
+    <strong>Address:</strong><br>
+    Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Bundruk, Manjari Budruk, Pune-411037, Maharashtra, India
+  </p>
+  <p style="line-height:1.6;">
+    <strong>Owner:</strong> Mr. Deshmukh
+  </p>
+  <p style="line-height:1.6;">
+    <strong>Phone:</strong> 
+    <a href="tel:08047641270" style="color:#f5c39b; text-decoration:none;">08047641270</a>
+    <br>
+    
+  </p>
+</div>
+
+
+    <!-- Social Media & Language -->
+    <div style="flex:1; min-width:200px;">
+      <h4 style="margin-bottom:15px; color:#f5c39b;">Follow Us</h4>
+      <div style="display:flex; gap:15px; font-size:1.3rem;">
+        <a href="https://www.facebook.com/sharer.php?u=https://www.indiamart.com/erverlast/" style="color:white;"><i class="fab fa-facebook-f"></i></a>
+        <!-- <a href="#" style="color:white;"><i class="fab fa-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=https%3A%2F%2Fwww.indiamart.com%2Ferverlast%2F" style="color:white;"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="#" style="color:white;"><i class="fab fa-whatsapp"></i></a> -->
+      </div>
+
+      <!-- Language Selector -->
+      <div style="margin-top:20px;">
+       
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <hr style="margin:40px 0; border:0; border-top:1px solid rgba(255,255,255,0.2);" />
+
+  <!-- Copyright -->
+  <div style="text-align:center; font-size:0.85rem; color:#ccc;">
+   © 2025 Everlast. All rights reserved. | Designed  by DW INNOVATION PVT. LTD.
+
+  </div>
+</footer>
+
+<!-- Font Awesome (if not loaded elsewhere) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
