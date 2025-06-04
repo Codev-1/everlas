@@ -9,8 +9,121 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+
 <body>
- <header class="navbar">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .dropdown-menu,
+    .sub-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: -98%;
+      list-style: none;
+      z-index: 1000;
+          background: linear-gradient(to right, #f8fafc, #e2e8f0);
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .sub-dropdown:hover .sub-dropdown-menu {
+      display: block;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hamburger {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: inherit;
+        flex-direction: column;
+        display: none;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+      }
+
+      .nav-links li {
+        width: 100%;
+        border-top: 1px solid #ccc;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 10px 20px;
+        width: 100%;
+      }
+
+      .dropdown-menu,
+      .sub-dropdown-menu {
+        position: relative;
+        background-color: white;
+        padding-left: 20px;
+      }
+
+      .dropdown:hover .dropdown-menu,
+      .sub-dropdown:hover .sub-dropdown-menu {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
   <div class="hamburger" id="hamburger">
     <i class="fas fa-bars"></i>
   </div>
@@ -19,31 +132,26 @@
     <a href="index.html"><img src="image/logo2.png" alt="Logo" style="height: 50px;" /></a>
   </div>
 
-  <nav>
+  <nav id="mobile-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
 
       <li class="dropdown">
         <a href="About.html">About Us </a>
-        <!-- <ul class="dropdown-menu">
-          <li><a href="testimonial.html">Testimonials</a></li>
-          <li><a href="brochure.pdf" download>Download Brochure</a></li>
-        </ul> -->
       </li>
 
       <li class="dropdown">
         <a href="product.html">Products ▾</a>
         <ul class="dropdown-menu">
-
           <li class="sub-dropdown">
             <a href="Paver_block.html">PAVER BLOCKS ▸</a>
-            <ul class="sub-dropdown-menu">
+            <ul class="sub-dropdown-menu" style="margin-top: -14%;">
               <li><a href="Paver_block.html">Rough Finish</a></li>
               <li><a href="Paver_block.html">Matte Finish</a></li>
               <li><a href="Paver_block.html">Rubber Mould Finish</a></li>
               <li><a href="Paver_block.html">Chequered Tile</a></li>
               <li><a href="Paver_block.html">High Strength Paver</a></li>
-              <li><a href="Paver_block.htmlr">Eco Paver</a></li>
+              <li><a href="Paver_block.html">Eco Paver</a></li>
             </ul>
           </li>
 
@@ -52,7 +160,7 @@
 
           <li class="sub-dropdown">
             <a href="chamber_cover.html">CHAMBER COVER ▸</a>
-            <ul class="sub-dropdown-menu">
+            <ul class="sub-dropdown-menu" style="margin-top: -14%;">
               <li><a href="chamber_cover.html">Low Duty</a></li>
               <li><a href="chamber_cover.html">Medium Duty</a></li>
               <li><a href="chamber_cover.html">Heavy Duty</a></li>
@@ -62,9 +170,9 @@
 
           <li class="sub-dropdown">
             <a href="U_Dtrain.html">U-DRAIN ▸</a>
-            <ul class="sub-dropdown-menu">
+            <ul class="sub-dropdown-menu" style="margin-top: -14%;">
               <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
-              <li><a href="#U_Dtrain.html">450×450×2000mm</a></li>
+              <li><a href="U_Dtrain.html">450×450×2000mm</a></li>
             </ul>
           </li>
 
@@ -80,6 +188,15 @@
     </ul>
   </nav>
 </header>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const nav = document.getElementById("mobile-nav");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
