@@ -59,7 +59,8 @@
     .sub-dropdown-menu {
       display: none;
       position: absolute;
-      top: 100%;
+      top: 35%;
+
       left: -98%;
       list-style: none;
       z-index: 1000;
@@ -402,10 +403,10 @@
     width: 100%;
   }
   .slider-track {
-    display: flex;
-    transition: transform 6s ease-in-out;
-    will-change: transform;
-  }
+  display: flex;
+  transition: transform 10s ease-in-out; /* Increased duration for slower movement */
+  will-change: transform;
+}
 
   .swiper-slide {
     flex: 0 0 22%;
