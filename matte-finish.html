@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matte Finish Paver Blocks - Everlast</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    /* --- Core Base Styles Reset --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbe8d3, #f5e0c3);
+      color: #333333;
+      overflow-x: hidden;
+    }
+
+    /* --- Global Navigation Bar --- */
+  .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+      z-index: 1000;
+    }
+
+    .navbar.scrolled {
+      background: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+.nav-links li,
+.dropdown-menu li,
+.sub-dropdown-menu li {
+  list-style: none;
+}
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links > li > a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links > li > a:hover {
+      color: brown;
+    }
+
+    .dropdown-menu,
+    .sub-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background: #fff;
+      min-width: 200px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .dropdown-menu a,
+    .sub-dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu a:hover,
+    .sub-dropdown-menu a:hover {
+      background: brown;
+      color: white;
+    }
+
+    .nav-links li:hover > .dropdown-menu {
+      display: flex;
+    }
+
+    .sub-dropdown:hover > .sub-dropdown-menu {
+      display: flex;
+      top: 0;
+      left: 100%;
+    }
+
+    .dropdown-arrow {
+      font-size: 12px;
+    }
+
+
+    /* --- Hero Collection Banner --- */
+    .hero-collection {
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/PAVER_BANNER.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 180px 20px 120px;
+      text-align: center;
+    }
+
+    .hero-collection h1 {
+      color: #ffffff;
+      font-size: 50px;
+      font-weight: 800;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      margin-bottom: 15px;
+    }
+
+    .hero-collection h1 span {
+      color: #8b1a1a;
+    }
+
+    .hero-collection p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #f3f3f3;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* --- Product Asymmetric Grid Deck --- */
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      justify-content: center;
+      padding: 60px 5%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 100%;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+	  height: min-content;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .info h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #222;
+      font-weight: 700;
+    }
+
+    .toggle-btn {
+      padding: 10px 20px;
+      background-color: #8b1a1a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #a72a2a;
+    }
+
+    .product-details {
+      display: none;
+      padding: 15px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      background-color: #fafafa;
+      text-align: left;
+    }
+
+    .product-card.active .product-details {
+      display: block !important;
+    }
+
+    .product-details p {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    /* --- Responsive Queries Breakpoints --- */
+    @media (max-width: 1200px) {
+      .product-container { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (max-width: 900px) {
+      .product-container { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.95);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        height: 100vh;
+        width: 280px;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 80px 20px;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        gap: 15px;
+      }
+
+      .nav-links.active {
+        left: 0;
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+      }
+
+      .overlay.show {
+        display: block;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links > li > a {
+        padding: 12px 20px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .dropdown-menu,
+      .sub-dropdown-menu {
+        position: static;
+        display: none;
+        background: #222;
+        box-shadow: none;
+        width: 100%;
+      }
+
+      .dropdown-menu a,
+      .sub-dropdown-menu a {
+        color: white;
+        padding-left: 30px;
+      }
+
+      .sub-dropdown-menu {
+        padding-left: 10px;
+      }
+
+      .dropdown-menu.show,
+      .sub-dropdown-menu.show {
+        display: flex !important;
+      }
+
+      .nav-links li:hover > .dropdown-menu,
+      .sub-dropdown:hover > .sub-dropdown-menu {
+        display: none;
+      }
+
+      .hero-collection { padding: 140px 20px 80px; }
+      .hero-collection h1 { font-size: 36px; }
+      .product-container { grid-template-columns: 1fr; gap: 20px; padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Everlast Logo" />
+    </div>
+    <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">HOME</a></li>
+      <li>
+        <a href="product.html" class="dropdown-toggle">PRODUCTS <span class="dropdown-arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li class="sub-dropdown">
+            <a href="Paver_block.html">PAVER BLOCKS <span class="dropdown-arrow">▸</span></a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="short-blast.html">Short Blast Paver</a></li>
+              <li><a href="Paver_block.html">Rough Finish</a></li>
+              <li><a href="matte-finish.html">Matte Finish</a></li>
+              <li><a href="rubber-mould.html">Rubber Mould Finish</a></li>
+              <!-- <li><a href="Paver_block.html">Chequered Tile</a></li> -->
+              <li><a href="high-strength.html">High Strength Paver</a></li>
+              <li><a href="eco-paver.html">Eco Paver</a></li>
+            </ul>
+          </li>
+          <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
+          <li><a href="Concrete_Kerbstone.html">CONCRETE KERBSTONE</a></li>
+          <li class="sub-dropdown">
+            <a href="chamber_cover.html">CHAMBER COVER <span class="dropdown-arrow">▸</span></a>
+            <ul class="sub-dropdown-menu">
+              <li><a href="low-duty.html">Low Duty</a></li>
+              <li><a href="medium-duty.html">Medium Duty</a></li>
+              <li><a href="heavy-duty.html">Heavy Duty</a></li>
+              <li><a href="extra-heavy-duty.html">Extra Heavy Duty</a></li>
+            </ul>
+          </li>
+          <li class="sub-dropdown">
+            <a href="U_Dtrain.html">U-DRAIN </a>
+            <!-- <ul class="sub-dropdown-menu">
+              <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
+              <li><a href="U_Dtrain.html">450×450×2000mm</a></li>
+            </ul> -->
+          </li>
+          <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
+          <li><a href="Saucer_Drain.html">SAUCER DRAIN</a></li>
+          <li><a href="Rcc_Tree_Gaurd.html">TREE GRATING</a></li>
+          <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li>
+          <li><a href="Concrete_Manhole_Cover.html">DRAIN COVER</a></li>
+        </ul>
+      </li>
+      <li><a href="About.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay" id="overlay"></div>
+
+  <section class="hero-collection">
+    <h1>Matte Finish <span>Collection</span></h1>
+    <p>
+      Pioneers in the industry, we offer a specialized assortment of premium Matte Finish paver blocks alongside high-strength concrete elements designed to enhance commercial and residential landscapes.
+    </p>
+  </section>
+
+  <main class="product-container">
+
+    <div class="product-card">
+      <img src="images/matte-finish.webp" alt="Matte Finish Square Paver" />
+      <div class="info">
+        <h3>Matte Finish Square Paver</h3>
+        <button class="toggle-btn">View Details</button>
+      </div>
+      <div class="product-details">
+        <p><strong>Thickness:</strong> 60 mm / 80mm</p>
+        <p><strong>Material:</strong> Premium Concrete</p>
+        <p><strong>Color:</strong> Classic Grey</p>
+        <p><strong>Shape:</strong> Square</p>
+        <p><strong>Brand:</strong> Everlast</p>
+        <p><strong>Dimensions:</strong> 200×200×60 mm</p>
+        <p><strong>Type:</strong> Matte Outdoor</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/I-matte-finish.webp" alt="I Shape Matte Paver" />
+      <div class="info">
+        <h3>I Shape Matte Paver</h3>
+        <button class="toggle-btn">View Details</button>
+      </div>
+      <div class="product-details">
+        <p><strong>Thickness:</strong> 80 mm</p>
+        <p><strong>Material:</strong> Concrete</p>
+        <p><strong>Color:</strong> Charcoal Gray</p>
+        <p><strong>Shape:</strong> I-Shape</p>
+        <p><strong>Usage/Application:</strong> Heavy Traffic Pavement</p>
+        <p><strong>Brand:</strong> Everlast</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+    <img src="images/matte-zigzag.webp" alt="Matte Finish Zigzag Paver" />
+    <div class="info">
+        <h3>Matte Finish Zigzag Paver</h3>
+        <button class="toggle-btn">View Details</button>
+    </div>
+    <div class="product-details">
+        <p><strong>Thickness:</strong> 60 mm / 80 mm / 100mm</p>
+        <p><strong>Material:</strong> High-Strength Vibro-Pressed Concrete</p>
+        <p><strong>Color:</strong> Grey, Red, Yellow (Custom Available)</p>
+        <p><strong>Shape:</strong> Zigzag Interlocking</p>
+        <p><strong>Brand:</strong> Everlast</p>
+        <p><strong>Dimensions:</strong> 222 mm x 111 mm (Standard)</p>
+        <p><strong>Type:</strong> Matte Finish (Heavy Duty / Anti-Skid)</p>
+    </div>
+</div>
+
+    <!-- <div class="product-card">
+      <img src="images/hexagonal-paver-block-500x500.webp" alt="Hexagonal Matte Paver" />
+      <div class="info">
+        <h3>Hexagonal Matte Paver</h3>
+        <button class="toggle-btn">View Details</button>
+      </div>
+      <div class="product-details">
+        <p><strong>Thickness:</strong> 60 mm</p>
+        <p><strong>Material:</strong> Reinforced Cement Concrete</p>
+        <p><strong>Color:</strong> Multi-color Matte Blend</p>
+        <p><strong>Shape:</strong> Hexagon</p>
+        <p><strong>Brand:</strong> Everlast</p>
+        <p><strong>Usage/Application:</strong> Decorative Driveways</p>
+      </div>
+    </div> -->
+
+  </main>
+
+  <div style="position: fixed; bottom: 30px; right: 30px; z-index: 1000; animation: popup 1.5s ease-in-out infinite;">
+    <a href="https://wa.me/9822088158?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank" title="Chat on WhatsApp">
+      <img src="images/Whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+    </a>
+  </div>
+
+  <style>
+    @keyframes popup {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.12); opacity: 0.9; }
+    }
+  </style>
+
+  <footer style="background: linear-gradient(135deg, #000000, #222222, #000000); padding: 50px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden; width: 100%;"> 
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; gap: 30px;">
+      
+      <div style="flex: 1 1 250px;">
+        <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2;">EVERLAST</div>
+        <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-top: 12px;">
+          We manufacture and supply high-quality Paver Blocks, Kerb Stones, and Manhole Covers, ensuring durability and excellence for all your construction and landscaping needs.
+        </p>
+      </div>
+
+      <div style="flex: 1 1 180px;">
+        <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.8;">
+          <li><a href="index.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">HOME</a></li>
+          <li><a href="product.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">PRODUCTS</a></li>
+          <li><a href="About.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">ABOUT US</a></li>
+          <li><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 14px; color: #cccccc; line-height: 1.8;">
+          <li style="margin-bottom: 8px;">
+            <i class="fa-solid fa-phone" style="margin-right: 8px; color: #8b1a1a;"></i>
+            <a href="tel:+919822088158" style="text-decoration: none; color: #cccccc;">+91 9822088158</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <i class="fa-solid fa-envelope" style="margin-right: 8px; color: #8b1a1a;"></i>
+            <a href="mailto:everlastpune@gmail.com" style="text-decoration: none; color: #cccccc;">everlastpune@gmail.com</a>
+          </li>
+          <li style="display: flex; align-items: flex-start;">
+            <i class="fa-solid fa-location-dot" style="margin-right: 8px; margin-top: 4px; color: #8b1a1a;"></i>
+            <span>Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Budruk, Pune-411037, Maharashtra, India</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; z-index: 1; position: relative; display: flex; justify-content: center; gap: 20px;">
+      <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
+      <a href="https://wa.me/919822088158" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #aaaaaa; z-index: 1; position: relative; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
+  © 2026 Everlast. All rights reserved.
+  <div style="margin-top: 4px; font-size: 12px; color: #666666;">
+    Developed By <a href="https://mindaxiss.com/" target="_blank" style="color: #8b1a1a; text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#8b1a1a'">MindAxis
+Innovation Pvt. Ltd.</a>
+  </div>
+</div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const overlay = document.getElementById('overlay');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      overlay.classList.toggle('show');
+    });
+
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      overlay.classList.remove('show');
+      closeAllMenus();
+    });
+
+    document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          const menu = toggle.nextElementSibling;
+          menu.classList.toggle('show');
+          closeOthers(menu, '.dropdown-menu');
+        }
+      });
+    });
+
+    // Handle mobile sub-dropdown clicks correctly without causing desktop click overrides
+    document.querySelectorAll('.sub-dropdown > a').forEach(sub => {
+      sub.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          const subMenu = sub.nextElementSibling;
+          const isActive = subMenu.classList.contains('show');
+          
+          document.querySelectorAll('.sub-dropdown-menu').forEach(menu => {
+            menu.classList.remove('show');
+          });
+
+          if (!isActive) {
+            subMenu.classList.add('show');
+          }
+        }
+      });
+    });
+
+    function closeOthers(current, selector) {
+      document.querySelectorAll(selector).forEach(menu => {
+        if (menu !== current) menu.classList.remove('show');
+      });
+    }
+
+    function closeAllMenus() {
+      document.querySelectorAll('.dropdown-menu, .sub-dropdown-menu').forEach(menu => {
+        menu.classList.remove('show');
+      });
+    }
+
+    // Dynamic details disclosure controllers mapping card interactions loops
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const card = this.closest('.product-card');
+        const isActive = card.classList.contains('active');
+
+        // 1. Instantly hide all details loops on other non-selected cards
+        document.querySelectorAll('.product-card').forEach(c => {
+          if (c !== card) {
+            c.classList.remove('active');
+            const otherButton = c.querySelector('.toggle-btn');
+            if (otherButton) otherButton.textContent = 'View Details';
+          }
+        });
+
+        // 2. Open or close the exclusively clicked target card details panel box
+        if (!isActive) {
+          card.classList.add('active');
+          this.textContent = 'Hide Details';
+        } else {
+          card.classList.remove('active');
+          this.textContent = 'View Details';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

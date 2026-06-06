@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Responsive Navbar with Sidebar Dropdown</title>
+  <title>EVERLAST_HOME_PAGE</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -35,6 +37,11 @@
       background: rgba(0, 0, 0, 0.85);
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
+.nav-links li,
+.dropdown-menu li,
+.sub-dropdown-menu li {
+  list-style: none;
+}
 
     .logo img {
       height: 50px;
@@ -218,19 +225,20 @@
     </div>
     <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="Index.html">HOME</a></li>
+      <li><a href="index.html">HOME</a></li>
       <li>
         <a href="product.html" class="dropdown-toggle">PRODUCTS <span class="dropdown-arrow">▾</span></a>
         <ul class="dropdown-menu">
           <li class="sub-dropdown">
             <a href="Paver_block.html">PAVER BLOCKS <span class="dropdown-arrow">▸</span></a>
             <ul class="sub-dropdown-menu">
+              <li><a href="short-blast.html">Short Blast Paver</a></li>
               <li><a href="Paver_block.html">Rough Finish</a></li>
-              <li><a href="Paver_block.html">Matte Finish</a></li>
-              <li><a href="Paver_block.html">Rubber Mould Finish</a></li>
-              <li><a href="Paver_block.html">Chequered Tile</a></li>
-              <li><a href="Paver_block.html">High Strength Paver</a></li>
-              <li><a href="Paver_block.html">Eco Paver</a></li>
+              <li><a href="matte-finish.html">Matte Finish</a></li>
+              <li><a href="rubber-mould.html">Rubber Mould Finish</a></li>
+              <!-- <li><a href="Paver_block.html">Chequered Tile</a></li> -->
+              <li><a href="high-strength.html">High Strength Paver</a></li>
+              <li><a href="eco-paver.html">Eco Paver</a></li>
             </ul>
           </li>
           <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
@@ -238,18 +246,18 @@
           <li class="sub-dropdown">
             <a href="chamber_cover.html">CHAMBER COVER <span class="dropdown-arrow">▸</span></a>
             <ul class="sub-dropdown-menu">
-              <li><a href="chamber_cover.html">Low Duty</a></li>
-              <li><a href="chamber_cover.html">Medium Duty</a></li>
-              <li><a href="chamber_cover.html">Heavy Duty</a></li>
-              <li><a href="chamber_cover.html">Extra Heavy Duty</a></li>
+              <li><a href="low-duty.html">Low Duty</a></li>
+              <li><a href="medium-duty.html">Medium Duty</a></li>
+              <li><a href="heavy-duty.html">Heavy Duty</a></li>
+              <li><a href="extra-heavy-duty.html">Extra Heavy Duty</a></li>
             </ul>
           </li>
           <li class="sub-dropdown">
-            <a href="U_Dtrain.html">U-DRAIN <span class="dropdown-arrow">▸</span></a>
-            <ul class="sub-dropdown-menu">
+            <a href="U_Dtrain.html">U-DRAIN </a>
+            <!-- <ul class="sub-dropdown-menu">
               <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
               <li><a href="U_Dtrain.html">450×450×2000mm</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
           <li><a href="Saucer_Drain.html">SOURCE DRAIN</a></li>
@@ -259,7 +267,7 @@
         </ul>
       </li>
       <li><a href="About.html">ABOUT US</a></li>
-      <li><a href="Contact.html">CONTACT US</a></li>
+      <li><a href="contact.html">CONTACT US</a></li>
     </ul>
   </div>
 
@@ -344,18 +352,17 @@
 
 
 
-
-<section style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-image: url('images/Paver_Block_Home.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 130px;">
+<section style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('images/Paver_Block_Home.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 130px;">
 
  
-
-  <h2 style="color: #8b1a18; text-align: center; font-size: 30px; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);">
+<h2 style="color: #8b1a18; text-align: center; font-size: 50px; text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);">
   Chequered Tiles
 </h2>
 
- <p style="text-align: center; max-width: 800px; margin: 10px auto 30px; font-size: 16px; color: #222; font-weight: 600;">
-    Leading Manufacturer of Red Square Chequered Tiles from Pune.
-     </p>
+<p style="text-align: center; max-width: 800px; margin: 10px auto 0px; font-size: 20px; color: white; font-weight: 600; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);;">
+  Leading Manufacturer of Red Square Chequered Tiles from Pune.
+</p>
+
 
   </section>
 
@@ -677,7 +684,7 @@
   <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
   <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.6;">
     <li><a href="index.html" style="color: whitesmoke; text-decoration: none;">HOME</a></li>
-    <li><a href="product.html" style="color: whitesmoke; text-decoration: none;">PPRODUCTS</a></li>
+    <li><a href="product.html" style="color: whitesmoke; text-decoration: none;">PRODUCTS</a></li>
     <li><a href="About.html" style="color: whitesmoke; text-decoration: none;">ABOUT US</a></li>
     <li><a href="contact.html" style="color: whitesmoke; text-decoration: none;">CONTACT US</a></li>
   </ul>
@@ -695,7 +702,7 @@
 </li>
     <li>
       <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
-      <a href="mailto:comficotton@gmail.com" style="text-decoration: none; color: whitesmoke;">comficotton@gmail.com</a>
+      <a href="mailto:everlastpune@gmail.com" style="text-decoration: none; color: whitesmoke;">everlastpune@gmail.com</a>
     </li>
     <li>
       <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
@@ -714,9 +721,12 @@
   </div>
 
   <!-- Copyright -->
-<div style="text-align: center; margin-top: 25px; font-size: 14px; color: #fff; z-index: 1; position: relative;">
-© 2025 Everlast. All rights reserved.
-  <div style="margin-top: 5px;">Developed By DW INNOVATION PVT. LTD.</div>
+<div style="text-align: center; margin-top: 30px; font-size: 13px; color: #aaaaaa; z-index: 1; position: relative; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
+  © 2026 Everlast. All rights reserved.
+  <div style="margin-top: 4px; font-size: 12px; color: #666666;">
+    Developed By <a href="https://mindaxiss.com/" target="_blank" style="color: #8b1a1a; text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#8b1a1a'">MindAxis
+Innovation Pvt. Ltd.</a>
+  </div>
 </div>
 
 </div>
@@ -724,71 +734,73 @@
 <!-- Font Awesome for icons -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
 
-
-</body>
-</html>
-
-
-
 <!-- Footer Section -->
-<div style="background: linear-gradient(135deg, #000000, #222222, #000000);padding: 40px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;"> 
-  
 
-  <!-- Background pattern -->
+<!-- 
+
+<div style="background: linear-gradient(135deg, #000000, #222222, #000000); padding: 40px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
 
-  <!-- Footer Content -->
+
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
 
-    <!-- Column 1 - Logo & About -->
+
     <div style="flex: 1 1 250px; padding: 10px;">
-  <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-    EVERLAST <br>
- 
-  </div>
-  <p style="color: whitesmoke; font-size: 14px; line-height: 1.6; margin-top: 10px;">
-  We manufacture and supply high-quality Paver Blocks, Kerb Stones, and Manhole Covers, ensuring durability and excellence for all your construction and landscaping needs.
-
-  </p>
-</div>
-
-    <!-- Column 2 - Help & Info -->
+      <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+        EVERLAST
+      </div>
+      <p style="color: whitesmoke; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+        We manufacture and supply high-quality Paver Blocks, Kerb Stones, and Manhole Covers, ensuring durability and excellence for all your construction and landscaping needs.
+      </p>
+    </div>
 
 
-    <!-- Column 3 - Quick Links -->
-  <div style="flex: 1 1 180px;padding: 13px 115PX;">
-  <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
-  <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.6;">
-    <li><a href="index.html" style="color: whitesmoke; text-decoration: none;">HOME</a></li>
-    <li><a href="product.html" style="color: whitesmoke; text-decoration: none;">PPRODUCTS</a></li>
-    <li><a href="About.html" style="color: whitesmoke; text-decoration: none;">ABOUT US</a></li>
-    <li><a href="contact.html" style="color: whitesmoke; text-decoration: none;">CONTACT US</a></li>
-  </ul>
-</div>
-
-
-    <!-- Column 4 - Contact Info -->
+    <div style="flex: 1 1 180px; padding: 13px 115px;">
+      <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
+      <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.6;">
+        <li><a href="index.html" style="color: whitesmoke; text-decoration: none;">HOME</a></li>
+        <li><a href="product.html" style="color: whitesmoke; text-decoration: none;">PRODUCTS</a></li>
+        <li><a href="About.html" style="color: whitesmoke; text-decoration: none;">ABOUT US</a></li>
+        <li><a href="contact.html" style="color: whitesmoke; text-decoration: none;">CONTACT US</a></li>
+      </ul>
+    </div>
     <div style="flex: 1 1 250px; padding: 10px;">
-  <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
-  <ul style="list-style: none; padding-left: 0; font-size: 15px; color: whitesmoke; line-height: 1.8;">
-      <li>
-  <i class="fa-solid fa-phone" style="margin-right: 8px;"></i>
-  <a href="tel:+919822088158" style="text-decoration: none; color: whitesmoke;">+91 9822088158</a> 
-
-</li>
-    <li>
-      <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
-      <a href="mailto:comficotton@gmail.com" style="text-decoration: none; color: whitesmoke;">comficotton@gmail.com</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
-      <span style="color: whitesmoke;">Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Bundruk, Manjari Budruk, Pune-411037, Maharashtra, India</span>
-19822088158" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+      <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
+      <ul style="list-style: none; padding-left: 0; font-size: 15px; color: whitesmoke; line-height: 1.8;">
+        <li>
+          <i class="fa-solid fa-phone" style="margin-right: 8px;"></i>
+          <a href="tel:+918047641270" style="text-decoration: none; color: whitesmoke;">+91 9822088158</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
+          <a href="mailto:everlastpune@gmail.com" style="text-decoration: none; color: whitesmoke;">everlastpune@gmail.com</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
+          <span style="color: whitesmoke;">Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Budruk, Pune-411037, Maharashtra, India</span>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <!-- Copyright -->
-<div sty
+  <div style="text-align: center; margin-top: 20px; z-index: 1; position: relative;">
+    <a href="https://facebook.com" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="vertical-align: middle;"></a>
+    <a href="https://instagram.com" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="vertical-align: middle;"></a>
+    <a href="https://wa.me/919822088158" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" style="vertical-align: middle;"></a>
+  </div>
 
 
+  <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #aaaaaa; z-index: 1; position: relative; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
+  © 2026 Everlast. All rights reserved.
+  <div style="margin-top: 4px; font-size: 12px; color: #666666;">
+    Developed By <a href="https://mindaxiss.com/" target="_blank" style="color: #8b1a1a; text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#8b1a1a'">MindAxis
+Innovation Pvt. Ltd.</a>
+  </div>
+</div>
+</div>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script> -->
+</body>
+</html>
