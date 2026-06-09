@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matte Finish Paver Blocks - Everlast</title>
+  <title>Customized Precast Products - Everlast</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -24,7 +24,7 @@
     }
 
     /* --- Global Navigation Bar --- */
-  .navbar {
+    .navbar {
       position: fixed;
       top: 0;
       width: 100%;
@@ -41,11 +41,12 @@
       background: rgba(0, 0, 0, 0.85);
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
-.nav-links li,
-.dropdown-menu li,
-.sub-dropdown-menu li {
-  list-style: none;
-}
+
+    .nav-links li,
+    .dropdown-menu li,
+    .sub-dropdown-menu li {
+      list-style: none;
+    }
 
     .logo img {
       height: 50px;
@@ -128,7 +129,6 @@
       font-size: 12px;
     }
 
-
     /* --- Hero Collection Banner --- */
     .hero-collection {
       font-family: 'Poppins', sans-serif;
@@ -164,7 +164,7 @@
     /* --- Product Asymmetric Grid Deck --- */
     .product-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
       justify-content: center;
       padding: 60px 5%;
@@ -181,7 +181,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
-	  height: min-content;
+      height: min-content;
     }
 
     .product-card:hover {
@@ -191,7 +191,7 @@
 
     .product-card img {
       width: 100%;
-      height: 200px;
+      height: 350px;
       object-fit: cover;
     }
 
@@ -225,25 +225,32 @@
 
     .product-details {
       display: none;
-      padding: 15px;
+      padding: 20px;
       border-top: 1px solid #eee;
       font-size: 14px;
       background-color: #fafafa;
       text-align: left;
     }
 
+    .product-details p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .product-details p strong {
+      color: #111;
+      display: inline-block;
+      width: 150px;
+    }
+
     .product-card.active .product-details {
       display: block !important;
     }
 
-    .product-details p {
-      margin: 8px 0;
-      color: #555;
-    }
-
     /* --- Responsive Queries Breakpoints --- */
     @media (max-width: 1200px) {
-      .product-container { grid-template-columns: repeat(3, 1fr); }
+      .product-container { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 900px) {
@@ -336,6 +343,12 @@
       .hero-collection { padding: 140px 20px 80px; }
       .hero-collection h1 { font-size: 36px; }
       .product-container { grid-template-columns: 1fr; gap: 20px; padding: 40px 20px; }
+      
+      .product-details p strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 3px;
+      }
     }
   </style>
 </head>
@@ -358,10 +371,10 @@
               <li><a href="Paver_block.html">Rough Finish</a></li>
               <li><a href="matte-finish.html">Matte Finish</a></li>
               <li><a href="rubber-mould.html">Rubber Mould Finish</a></li>
-              <!-- <li><a href="Paver_block.html">Chequered Tile</a></li> -->
               <li><a href="high-strength.html">High Strength Paver</a></li>
- <li><a href="Saucer_Drain.html">Saucer Drain</a></li> <li><a href="eco-paver.html">Grass Paver</a></li>
-				<li><a href="tree-grating.html">Tree Grating / Gaurd</a></li>
+              <li><a href="Saucer_Drain.html">Saucer Drain</a></li> 
+              <li><a href="eco-paver.html">Grass Paver</a></li>
+              <li><a href="tree-grating.html">Tree Grating / Gaurd</a></li>
             </ul>
           </li>
           <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
@@ -377,14 +390,8 @@
           </li>
           <li class="sub-dropdown">
             <a href="U_Dtrain.html">U-DRAIN </a>
-            <!-- <ul class="sub-dropdown-menu">
-              <li><a href="U_Dtrain.html">300×300×2000mm</a></li>
-              <li><a href="U_Dtrain.html">450×450×2000mm</a></li>
-            </ul> -->
           </li>
           <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
-          <!--  <li><a href="Saucer_Drain.html">Saucer Drain</a></li> <li><a href="eco-paver.html">Grass Paver</a></li>
-				<li><a href="tree-grating.html">Tree Grating / Gaurd</a></li> -->
           <li><a href="Rcc_Tree_Gaurd.html">TREE GRATING</a></li>
           <!-- <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li> -->
           <li><a href="Concrete_Manhole_Cover.html">DRAIN COVER</a></li>
@@ -397,89 +404,57 @@
   </nav>
 
   <div class="overlay" id="overlay"></div>
-
+   
+  <!-- Hero Component Title Banner Area -->
   <section class="hero-collection">
-    <h1>Low Duty Chamber Cover <span>Collection</span></h1>
+    <h1>Customized Precast <span>Collection</span></h1>
     <p>
-      Pioneers in the industry, we offer a specialized assortment of premium Low Duty precast chamber covers designed to blend seamlessly with residential landscapes, domestic drainage networks, and pedestrian pathways.
+      Engineered to custom structural specifications, we design and manufacture high-grade custom precast solutions including engraved routing matrices, custom milestone markers, and civil engineering utilities tailored for specialized projects.
     </p>
   </section>
 
+  <!-- Product Container Cards Grid Deck -->
   <main class="product-container">
 
-    <!-- Product Card 1 -->
+    <!-- Card 1: OFC Route Marker -->
     <div class="product-card">
-      <img src="images/low-duty.webp" alt="Low Duty Square Chamber Cover" />
-      <div class="info">
-        <h3>Low Duty Square Cover</h3>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="product-details">
-        <p><strong>Load Capacity:</strong> 2.5 Tons (LD)</p>
-        <p><strong>Material:</strong> Reinforced Vibro-Compressed Concrete</p>
-        <p><strong>Color:</strong> Classic Grey</p>
-        <p><strong>Shape:</strong> Square</p>
-        <p><strong>Brand:</strong> Everlast</p>
-        <p><strong>Dimensions:</strong> 300×300 mm</p>
-        <p><strong>Usage/Application:</strong> Domestic Drainage & Residential Gardens</p>
-      </div>
+        <img src="image/customized.jpeg" alt="Precast Concrete OFC Route Marker" />
+        <div class="info">
+            <h3>Custom Precast OFC Route Marker</h3>
+            <button class="toggle-btn">View Details</button>
+        </div>
+        <div class="product-details">
+            <p><strong>Product Type:</strong> Custom Engraved Optical Fiber Cable (OFC) Route Indicator</p>
+            <p><strong>Material:</strong> High-Strength Precast Concrete Matrix</p>
+            <p><strong>Customization:</strong> Permanent debossed lettering ("OFC CWN-MILIT") for long-term utility identification</p>
+            <p><strong>Design Profile:</strong> Semi-arched rounded top head with integrated central alignment/pulling aperture</p>
+            <p><strong>Brand:</strong> Everlast</p>
+            <p><strong>Features:</strong> Weather-resistant typography, high subterranean stability, robust impact resistance against earthmoving machinery</p>
+            <p><strong>Usage:</strong> Telecom Network Mapping, Military Cable Routes, Subsurface Pipeline Marking & Cross-Country Utilities</p>
+        </div>
     </div>
 
-    <!-- Product Card 2 -->
+    <!-- Card 2: Boundary Milestone Pillar -->
     <div class="product-card">
-      <img src="images/rectangular.jpeg" alt="Low Duty Rectangular Chamber Cover" />
-      <div class="info">
-        <h3>Low Duty Rectangular Cover</h3>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="product-details">
-        <p><strong>Load Capacity:</strong> 2.5 Tons (LD)</p>
-        <p><strong>Material:</strong> Reinforced Vibro-Compressed Concrete</p>
-        <p><strong>Color:</strong> Charcoal Gray</p>
-        <p><strong>Shape:</strong> Rectangular</p>
-        <p><strong>Brand:</strong> Everlast</p>
-        <p><strong>Dimensions:</strong> 450×600 mm</p>
-        <p><strong>Usage/Application:</strong> Footpaths & Light Walkways</p>
-      </div>
+        <img src="image/custom.jpeg" alt="Precast Concrete Boundary Milestone Pillar" />
+        <div class="info">
+            <h3>Precast Boundary & Milestone Pillar</h3>
+            <button class="toggle-btn">View Details</button>
+        </div>
+        <div class="product-details">
+            <p><strong>Product Type:</strong> Heavy-Duty Precast Milestone / Demarcation Boundary Pillar</p>
+            <p><strong>Material:</strong> Reinforced Structural Precast Concrete (M30/M40 Grade)</p>
+            <p><strong>Shape/Profile:</strong> Square Pillar Base with sleek, chamfered top edges to shed water away</p>
+            <p><strong>Finish:</strong> Industrial Smooth Cast Finish (Ready for high-visibility marking paints)</p>
+            <p><strong>Brand:</strong> Everlast</p>
+            <p><strong>Features:</strong> High structural density, excellent ground anchoring profile, resistant to harsh environmental weathering and atmospheric degradation</p>
+            <p><strong>Usage:</strong> Land Enclosures, National Highway Chainage Markers, Government Plot Demarcations & Railway Property Lines</p>
+        </div>
     </div>
-
-    <!-- Product Card 3 -->
-    <div class="product-card">
-      <img src="images/circular.jpeg" alt="Low Duty Light Circular Cover" />
-      <div class="info">
-        <h3>Light Circular Chamber Cover</h3>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="product-details">
-        <p><strong>Load Capacity:</strong> 2.5 Tons (LD)</p>
-        <p><strong>Material:</strong> High-Density Concrete Matrix</p>
-        <p><strong>Color:</strong> Terracotta Red</p>
-        <p><strong>Shape:</strong> Circular</p>
-        <p><strong>Brand:</strong> Everlast</p>
-        <p><strong>Dimensions:</strong> 450 mm Diameter</p>
-        <p><strong>Usage/Application:</strong> Cycle Tracks & Home Porticos</p>
-      </div>
-    </div>
-
-    <!-- Product Card 4 -->
-    <!-- <div class="product-card">
-      <img src="images/recessed.jpeg" alt="Recessed Low Duty Chamber Cover" />
-      <div class="info">
-        <h3>Recessed Low Duty Cover</h3>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="product-details">
-        <p><strong>Load Capacity:</strong> 2.5 Tons (LD)</p>
-        <p><strong>Material:</strong> Reinforced Cement Concrete (RCC)</p>
-        <p><strong>Color:</strong> Custom / Infill Ready</p>
-        <p><strong>Shape:</strong> Square (Paver Infill Type)</p>
-        <p><strong>Brand:</strong> Everlast</p>
-        <p><strong>Usage/Application:</strong> Decorative Driveways & Block Pavements</p>
-      </div>
-    </div> -->
 
   </main>
 
+  <!-- WhatsApp Quick Action Handle -->
   <div style="position: fixed; bottom: 30px; right: 30px; z-index: 1000; animation: popup 1.5s ease-in-out infinite;">
     <a href="https://wa.me/9822088158?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank" title="Chat on WhatsApp">
       <img src="images/Whatsapp.png" alt="WhatsApp" style="width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
@@ -493,85 +468,86 @@
     }
   </style>
 
+  <!-- Global Footer Container -->
   <footer style="background: linear-gradient(135deg, #000000, #222222, #000000); padding: 50px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden; width: 100%;"> 
   
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; gap: 30px;">
-    
-    <!-- Column 1: About Company -->
-    <div style="flex: 1 1 250px;">
-      <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2;">EVERLAST</div>
-      <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-top: 12px;">
-        We manufacture and supply high-quality Paver Blocks, Kerb Stones, and Manhole Covers, ensuring durability and excellence for all your construction and landscaping needs.
-      </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; gap: 30px;">
+      
+      <!-- Column 1: About Company -->
+      <div style="flex: 1 1 250px;">
+        <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2;">EVERLAST</div>
+        <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-top: 12px;">
+          We manufacture and supply high-quality Paver Blocks, Kerb Stones, and Manhole Covers, ensuring durability and excellence for all your construction and landscaping needs.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div style="flex: 1 1 150px;">
+        <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.8;">
+          <li><a href="index.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Home</a></li>
+          <li><a href="product.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Products</a></li>
+          <li><a href="About.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">About Us</a></li>
+          <li><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Contact Us</a></li>
+          <li><a href="Rcc_Tree_Gaurd.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Tree Grating</a></li>
+          <li><a href="manhole_cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Cable Trench Cover</a></li>
+          <li><a href="Concrete_Manhole_Cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Drain Cover</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Our Products Category List -->
+      <div style="flex: 1 1 180px;">
+        <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Our Products</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.8;">
+          <li><a href="Paver_block.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Paver Blocks</a></li>
+          <li><a href="Chequered_Tiles.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Chequered Tiles</a></li>
+          <li><a href="Concrete_Kerbstone.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Concrete Kerbstone</a></li>
+          <li><a href="chamber_cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Chamber Covers</a></li>
+          <li><a href="U_Dtrain.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">U-Drain</a></li>
+          <li><a href="Bollard.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Rcc Precast Bollard</a></li>
+          <li><a href="Saucer_Drain.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Saucer Drain</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div style="flex: 1 1 250px;">
+        <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 14px; color: #cccccc; line-height: 1.8;">
+          <li style="margin-bottom: 8px;">
+            <i class="fa-solid fa-phone" style="margin-right: 8px; color: #8b1a1a;"></i>
+            <a href="tel:+919822088158" style="text-decoration: none; color: #cccccc;">+91 9822088158</a>
+          </li>
+          <li style="margin-bottom: 8px;">
+            <i class="fa-solid fa-envelope" style="margin-right: 8px; color: #8b1a1a;"></i>
+            <a href="mailto:everlastpune@gmail.com" style="text-decoration: none; color: #cccccc;">everlastpune@gmail.com</a>
+          </li>
+          <li style="display: flex; align-items: flex-start;">
+            <i class="fa-solid fa-location-dot" style="margin-right: 8px; margin-top: 4px; color: #8b1a1a;"></i>
+            <span>Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Budruk, Pune-411037, Maharashtra, India</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Column 2: Quick Links -->
-    <div style="flex: 1 1 150px;">
-      <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
-      <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.8;">
-        <li><a href="index.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Home</a></li>
-        <li><a href="product.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Products</a></li>
-        <li><a href="About.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">About Us</a></li>
-        <li><a href="contact.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Contact Us</a></li>
-        <li><a href="Rcc_Tree_Gaurd.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Tree Grating</a></li>
-        <li><a href="manhole_cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Cable Trench Cover</a></li>
-        <li><a href="Concrete_Manhole_Cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Drain Cover</a></li>
-      </ul>
+    <!-- Social Media Icon Handles -->
+    <div style="text-align: center; margin-top: 30px; z-index: 1; position: relative; display: flex; justify-content: center; gap: 20px;">
+      <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
+      <a href="https://wa.me/919822088158" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
     </div>
 
-    <!-- Column 3: Our Products Category List -->
-    <div style="flex: 1 1 180px;">
-      <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Our Products</h3>
-      <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.8;">
-        <li><a href="Paver_block.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Paver Blocks</a></li>
-        <li><a href="Chequered_Tiles.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Chequered Tiles</a></li>
-        <li><a href="Concrete_Kerbstone.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Concrete Kerbstone</a></li>
-        <li><a href="chamber_cover.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Chamber Covers</a></li>
-        <li><a href="U_Dtrain.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">U-Drain</a></li>
-        <li><a href="Bollard.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Rcc Precast Bollard</a></li>
-        <li><a href="Saucer_Drain.html" style="color: #cccccc; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#8b1a1a'" onmouseout="this.style.color='#cccccc'">Saucer Drain</a></li>
-      </ul>
+    <!-- Copyright Information Area -->
+    <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #aaaaaa; z-index: 1; position: relative; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
+      © 2026 Everlast. All rights reserved.
+      <div style="margin-top: 4px; font-size: 12px; color: #666666;">
+        Developed By <a href="https://mindaxiss.com/" target="_blank" style="color: #8b1a1a; text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#8b1a1a'">MindAxis Innovation Pvt. Ltd.</a>
+      </div>
     </div>
 
-    <!-- Column 4: Contact Info -->
-    <div style="flex: 1 1 250px;">
-      <h3 style="margin-bottom: 12px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
-      <ul style="list-style: none; padding-left: 0; font-size: 14px; color: #cccccc; line-height: 1.8;">
-        <li style="margin-bottom: 8px;">
-          <i class="fa-solid fa-phone" style="margin-right: 8px; color: #8b1a1a;"></i>
-          <a href="tel:+919822088158" style="text-decoration: none; color: #cccccc;">+91 9822088158</a>
-        </li>
-        <li style="margin-bottom: 8px;">
-          <i class="fa-solid fa-envelope" style="margin-right: 8px; color: #8b1a1a;"></i>
-          <a href="mailto:everlastpune@gmail.com" style="text-decoration: none; color: #cccccc;">everlastpune@gmail.com</a>
-        </li>
-        <li style="display: flex; align-items: flex-start;">
-          <i class="fa-solid fa-location-dot" style="margin-right: 8px; margin-top: 4px; color: #8b1a1a;"></i>
-          <span>Sr. No. 132, Mhasoba Vasti, Keshav Nagar Manjari Road, Manjari Budruk, Pune-411037, Maharashtra, India</span>
-        </li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Social Media Icon Handles -->
-  <div style="text-align: center; margin-top: 30px; z-index: 1; position: relative; display: flex; justify-content: center; gap: 20px;">
-    <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
-    <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
-    <a href="https://wa.me/919822088158" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'"></a>
-  </div>
-
-  <!-- Copyright Information Area -->
-  <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #aaaaaa; z-index: 1; position: relative; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px;">
-    © 2026 Everlast. All rights reserved.
-    <div style="margin-top: 4px; font-size: 12px; color: #666666;">
-      Developed By <a href="https://mindaxiss.com/" target="_blank" style="color: #8b1a1a; text-decoration: none; font-weight: 600; transition: color 0.3s;" onmouseover="this.style.color='#ffffff'" onmouseout="this.style.color='#8b1a1a'">MindAxis Innovation Pvt. Ltd.</a>
-    </div>
-  </div>
-
-</footer>
+  </footer>
 
   <script>
     const navbar = document.getElementById('navbar');
@@ -605,7 +581,6 @@
       });
     });
 
-    // Handle mobile sub-dropdown clicks correctly without causing desktop click overrides
     document.querySelectorAll('.sub-dropdown > a').forEach(sub => {
       sub.addEventListener('click', (e) => {
         if (window.innerWidth <= 768) {
@@ -638,7 +613,7 @@
       });
     }
 
-    // Dynamic details disclosure controllers mapping card interactions loops
+    // Dynamic details disclosure controllers mapping card interactions loops independently
     document.querySelectorAll('.toggle-btn').forEach(button => {
       button.addEventListener('click', function (e) {
         e.preventDefault();

@@ -238,7 +238,8 @@
               <li><a href="rubber-mould.html">Rubber Mould Finish</a></li>
               <!-- <li><a href="Paver_block.html">Chequered Tile</a></li> -->
               <li><a href="high-strength.html">High Strength Paver</a></li>
-              <li><a href="eco-paver.html">Eco Paver</a></li>
+ <li><a href="Saucer_Drain.html">Saucer Drain</a></li> <li><a href="eco-paver.html">Grass Paver</a></li>
+				<li><a href="tree-grating.html">Tree Grating / Gaurd</a></li>
             </ul>
           </li>
           <li><a href="Chequered_Tiles.html">CHEQUERED TILES</a></li>
@@ -260,10 +261,12 @@
             </ul> -->
           </li>
           <li><a href="Bollard.html">RCC PRECAST BOLLARD</a></li>
-          <li><a href="Saucer_Drain.html">SOURCE DRAIN</a></li>
+          <!--  <li><a href="Saucer_Drain.html">Saucer Drain</a></li> <li><a href="eco-paver.html">Grass Paver</a></li>
+				<li><a href="tree-grating.html">Tree Grating / Gaurd</a></li> -->
           <li><a href="Rcc_Tree_Gaurd.html">TREE GRATING</a></li>
-          <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li>
+          <!-- <li><a href="manhole_cover.html">CABLE TRENCH COVER</a></li> -->
           <li><a href="Concrete_Manhole_Cover.html">DRAIN COVER</a></li>
+         <li><a href="costomized-products.html">CUSTOMIZED PRODUCTS</a></li>
         </ul>
       </li>
       <li><a href="About.html">ABOUT US</a></li>
@@ -397,6 +400,7 @@ background: linear-gradient(135deg, #fbe8d3, #f5e0c3);
       display: flex;
       justify-content: center;
       padding: 60px 20px 40px;
+      gap: 15px;
     }
 
     .product-card {
@@ -419,7 +423,7 @@ background: linear-gradient(135deg, #fbe8d3, #f5e0c3);
 
     .product-card img {
       width: 100%;
-      height: 280px;
+      height: 380px;
       object-fit: cover;
     }
 
@@ -585,7 +589,31 @@ background: linear-gradient(135deg, #fbe8d3, #f5e0c3);
       <p><strong>Type:</strong> Outdoor</p>
     </div>
   </div>
+
+
+  <!-- Precast Concrete Drain Cover & U-Trough Card -->
+<div class="product-card">
+  <img src="image/drain--cover.png" alt="Precast Concrete Drain Cover and U-Trough" />
+  <div class="info">
+    <h3>Precast Concrete Drain Cover & U-Trough</h3>
+    <button class="toggle-btn">View Details</button>
+  </div>
+  <div class="product-details">
+    <p><strong>Product Type:</strong> Heavy-Duty Precast Stormwater Drain Cover & Integrated U-Channel Gutter</p>
+    <p><strong>Material:</strong> High-Strength Reinforced Precast Concrete (M30/M40 Grade Matrix)</p>
+    <p><strong>Color:</strong> Natural Concrete Gray</p>
+    <p><strong>Brand:</strong> Everlast</p>
+    <p><strong>Design Profile:</strong> Flush-fitting slab cover designed to sit securely within reinforced recessed L-lips of the U-trough system</p>
+    <p><strong>Features:</strong> High structural load-bearing capacity, precision-molded edges for uniform joint alignment, smooth internal finish for optimal water flow, and high resistance to soil pressure and heavy surface loads</p>
+    <p><strong>Usage/Application:</strong> Highway Roadside Drainage, Industrial Stormwater Systems, Commercial Townships, Residential Perimeters & Trench Enclosures</p>
+    <p><strong>Country of Origin:</strong> Made in India</p>
+  </div>
 </div>
+
+
+</div>
+
+
 
 <!-- WhatsApp Floating Button -->
 <div class="whatsapp-float">
@@ -677,13 +705,24 @@ background: linear-gradient(135deg, #fbe8d3, #f5e0c3);
 
 <!-- JS: Toggle product details -->
 <script>
-  const button = document.querySelector('.toggle-btn');
-  const card = document.querySelector('.product-card');
+  // Select ALL toggle buttons on the page
+  const buttons = document.querySelectorAll('.toggle-btn');
 
-  button.addEventListener('click', function () {
-    const isActive = card.classList.contains('active');
-    card.classList.toggle('active');
-    this.textContent = isActive ? 'View Details' : 'Hide Details';
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Find the specific product card that contains THIS clicked button
+      const currentCard = this.closest('.product-card');
+      
+      if (currentCard) {
+        const isActive = currentCard.classList.contains('active');
+        
+        // Toggle active class only on the current card
+        currentCard.classList.toggle('active');
+        
+        // Update the button text for this card only
+        this.textContent = isActive ? 'View Details' : 'Hide Details';
+      }
+    });
   });
 </script>
 
